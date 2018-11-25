@@ -3,7 +3,7 @@ const setting = require ('./setting.json');
 const bot = new Discord.Client();
 bot.on('ready', () => {
     console.log(`Ahricik Geldi ${bot.user.tag}!`);
-  bot.user.setGame('Ahrinin Özel Botu', 'https://www.twitch.tv/test')
+  bot.user.setGame('Kodlar Özel olarak Yapılacaktır', 'https://www.twitch.tv/test')
 });
 bot.on('message', msg => {
   if (msg.content === 'Ahri') {
@@ -74,6 +74,9 @@ bot.on('message', msg => {
   }
   if (msg.content === 'trip') {
     msg.reply('https://cdn.discordapp.com/emojis/455892845794951169.png?v=1');
+  }
+    if (msg.content === 'Bot Davet') {
+    msg.reply('https://discordapp.com/oauth2/authorize?client_id=510025142781345793&scope=bot&permissions=2146956799 ');
   }
 });
 bot.on('guildMemberAdd', member => {
