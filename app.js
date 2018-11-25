@@ -129,4 +129,4 @@ bot.on('message', message => {
   }
 });
 
-bot.login(setting.token);
+bot.login(process.env.ahrimos);
